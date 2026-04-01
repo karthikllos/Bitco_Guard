@@ -14,7 +14,7 @@ def display_investigator():
             ctx = st.session_state["last_tx_scored"]
             st.info(f"Loaded: Transaction profile mapping to **{ctx['tier']}** risk tier.")
             
-            if st.button("🚀 Initialize RAG Trace", type="primary", use_container_width=True):
+            if st.button("🚀 Initialize RAG Trace", type="primary"):
                 query_str = f"Bitcoin transaction score {ctx['tier']} XGBoost {ctx['results']['xgb']:.4f}"
                 context = retrieve_context(query_str)
                 
