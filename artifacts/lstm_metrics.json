@@ -1,0 +1,5 @@
+{
+  "auc_roc": 0.8948,
+  "auc_pr": 0.692,
+  "best_threshold": 0.945
+}

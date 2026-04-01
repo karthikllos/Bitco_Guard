@@ -1,0 +1,48 @@
+{
+  "best_strategy": "XGB",
+  "auc_roc": 0.9591,
+  "auc_pr": 0.8292,
+  "f1": 0.8276,
+  "precision": 0.9644,
+  "recall": 0.7248,
+  "threshold": 0.815,
+  "individual_models": {
+    "xgboost": {
+      "auc_roc": 0.9499,
+      "auc_pr": 0.8172,
+      "best_threshold": 0.82,
+      "best_f1": 0.8221
+    },
+    "lightgbm": {
+      "auc_roc": 0.9558,
+      "auc_pr": 0.8231
+    },
+    "catboost": {
+      "auc_roc": 0.948,
+      "auc_pr": 0.8175
+    },
+    "lstm": {
+      "auc_roc": 0.8948,
+      "auc_pr": 0.692,
+      "best_threshold": 0.945
+    },
+    "graphsage": {
+      "auc_roc": 0.7508,
+      "auc_pr": 0.2885,
+      "best_threshold": 0.51
+    },
+    "gat": {
+      "auc_roc": 0.8924,
+      "auc_pr": 0.6217,
+      "best_threshold": 0.75
+    }
+  },
+  "ensemble_weights": {
+    "xgboost": 0.2013,
+    "lstm": 0.1704,
+    "graphsage": 0.0711,
+    "lightgbm": 0.2027,
+    "catboost": 0.2014,
+    "gat": 0.1531
+  }
+}
